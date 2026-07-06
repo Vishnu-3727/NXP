@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/vishnu/nxp_cup_ws/build/medbot_msgs/rosidl_generator_py/medbot_msgs/medbot_msgs_s__rosidl_typesupport_c.so" "TARGETS" "medbot_msgs_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/medbot_msgs")

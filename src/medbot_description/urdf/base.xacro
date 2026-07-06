@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Real Husarion ROSbot XL meshes/dimensions (ros-jazzy-rosbot-description apt pkg).
+       Joint names kept as our own (front_left/front_right/rear_left/rear_right) so
+       ros2_control.xacro, controllers.yaml, sensors.xacro need no changes.
+       This whole file is still the MR-Buggy3 SWAP POINT. -->
+
+  <!-- ============ parameters (real ROSbot XL non-mecanum values) ============ -->
+  <xacro:property name="wheel_radius"    value="0.048"/>
+  <xacro:property name="wheel_thickness" value="0.036"/>
+  <xacro:property name="wheel_mass"      value="0.051"/>
+
+  <xacro:property name="wheel_xoff" value="0.085"/>  <!-- half wheelbase (0.170 total) -->
+  <xacro:property name="wheel_yoff" value="0.124"/>  <!-- half track  (0.248 total) -->
+
+  <xacro:property name="mesh_pkg" value="package://rosbot_description/meshes/rosbot_xl"/>
+
+  <!-- ============ base_footprint (nav frame at ground) ============ -->
+  <link name="base_footprint"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child  link="base_link"/>
+    <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ============ chassis (official body mesh) ============ -->
+  <link name="base_link">
+    <visual>
+      <geometry><mesh filename="${mesh_pkg}/body.dae" scale="1 1 1"/></geometry>
+    </visual>
+    <collision>
+      <geometry><mesh filename="${mesh_pkg}/body_colision.stl" scale="1 1 1"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="3.5"/>
+      <origin xyz="0 0 0.0358" rpy="0 0 0"/>
+      <inertia ixx="0.01393" ixy="-0.000020968097" ixz="0.000010399694"
+               iyy="0.01081" iyz="0.000059372953" izz="0.02048"/>
+    </inertial>
+  </link>
+
+  <!-- ============ wheel macro (official meshes, our joint naming) ============ -->
+  <xacro:macro name="wheel" params="name x y mesh_letter rot">
+    <link name="${name}_wheel">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 ${rot}"/>
+        <geometry><mesh filename="${mesh_pkg}/wheel_${mesh_letter}.dae" scale="1 1 1"/></geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry><cylinder radius="${wheel_radius}" length="${wheel_thickness}"/></geometry>
+      </collision>
+      <inertial>
+        <mass value="${wheel_mass}"/>
+        <inertia ixx="0.000050587413" ixy="0.0" ixz="0.0"
+                 iyy="0.000085933192" iyz="0.0" izz="0.000050587829"/>
+      </inertial>
+    </link>
+
+    <joint name="${name}_wheel_joint" type="continuous">
+      <parent link="base_link"/>
+      <child  link="${name}_wheel"/>
+      <origin xyz="${x} ${y} 0" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+
+    <gazebo reference="${name}_wheel">
+      <collision>
+        <surface>
+          <friction>
+            <ode><mu>1</mu><mu2>1</mu2><slip1>0.035</slip1><slip2>0</slip2></ode>
+          </friction>
+        </surface>
+      </collision>
+    </gazebo>
+  </xacro:macro>
+
+  <xacro:wheel name="front_left"  x="${wheel_xoff}"  y="${wheel_yoff}"  mesh_letter="b" rot="3.14159"/>
+  <xacro:wheel name="front_right" x="${wheel_xoff}"  y="${-wheel_yoff}" mesh_letter="a" rot="3.14159"/>
+  <xacro:wheel name="rear_left"   x="${-wheel_xoff}" y="${wheel_yoff}"  mesh_letter="a" rot="0"/>
+  <xacro:wheel name="rear_right"  x="${-wheel_xoff}" y="${-wheel_yoff}" mesh_letter="b" rot="0"/>
+
+</robot>

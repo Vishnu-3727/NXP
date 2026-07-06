@@ -1,0 +1,31 @@
+### robot_localization EKF: fuses wheel odom (x,y,vx,vyaw) + IMU (yaw, vyaw, ax,ay).
+### Local-only EKF: world_frame == odom_frame, so this owns odom->base_footprint TF.
+### diff_drive_controller's enable_odom_tf is false so there's only one broadcaster.
+ekf_filter_node:
+  ros__parameters:
+    use_sim_time: true
+    frequency: 30.0
+    two_d_mode: true
+    publish_tf: true
+
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_footprint
+    world_frame: odom
+
+    odom0: /diff_drive_controller/odom
+    odom0_config: [true,  true,  false,
+                   false, false, false,
+                   true,  false, false,
+                   false, false, false,
+                   false, false, false]
+    odom0_differential: false
+
+    imu0: /imu
+    imu0_config: [false, false, false,
+                  false, false, true,
+                  false, false, false,
+                  false, false, true,
+                  true,  true,  false]
+    imu0_differential: false
+    imu0_relative: false

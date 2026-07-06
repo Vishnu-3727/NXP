@@ -1,0 +1,27 @@
+[0.011s] Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --build /home/vishnu/nxp_cup_ws/build/medbot_localization -- -j24 -l24
+[0.072s] Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --build /home/vishnu/nxp_cup_ws/build/medbot_localization -- -j24 -l24
+[0.086s] Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --install /home/vishnu/nxp_cup_ws/build/medbot_localization
+[0.100s] -- Install configuration: ""
+[0.101s] -- Execute custom install script
+[0.101s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/config/ekf.yaml
+[0.102s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/config/slam_toolbox.yaml
+[0.102s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/launch/ekf.launch.py
+[0.103s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/launch/mapping.launch.py
+[0.103s] -- Symlinking: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/maps/city_map.pgm
+[0.115s] -- Symlinking: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/maps/city_map.yaml
+[0.129s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/ament_index/resource_index/package_run_dependencies/medbot_localization
+[0.129s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/ament_index/resource_index/parent_prefix_path/medbot_localization
+[0.130s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/environment/ament_prefix_path.sh
+[0.130s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/environment/ament_prefix_path.dsv
+[0.130s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/environment/path.sh
+[0.130s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/environment/path.dsv
+[0.130s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/local_setup.bash
+[0.130s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/local_setup.sh
+[0.130s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/local_setup.zsh
+[0.130s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/local_setup.dsv
+[0.131s] -- Symlinking: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/package.dsv
+[0.141s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/ament_index/resource_index/packages/medbot_localization
+[0.141s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/cmake/medbot_localizationConfig.cmake
+[0.141s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/cmake/medbot_localizationConfig-version.cmake
+[0.141s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_localization/share/medbot_localization/package.xml
+[0.143s] Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --install /home/vishnu/nxp_cup_ws/build/medbot_localization

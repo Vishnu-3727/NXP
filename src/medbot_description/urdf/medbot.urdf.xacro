@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="medbot">
+  <!-- Top-level robot: assembles base + sensors + ros2_control.
+       Swap this package's files for the official MR-Buggy3 later; nothing
+       downstream should need to change if topic/frame names are preserved. -->
+  <xacro:include filename="$(find medbot_description)/urdf/base.xacro"/>
+  <xacro:include filename="$(find medbot_description)/urdf/sensors.xacro"/>
+  <xacro:include filename="$(find medbot_description)/urdf/ros2_control.xacro"/>
+</robot>

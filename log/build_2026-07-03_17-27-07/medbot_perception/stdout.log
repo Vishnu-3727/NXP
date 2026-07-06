@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating medbot_perception.egg-info
+writing medbot_perception.egg-info/PKG-INFO
+writing dependency_links to medbot_perception.egg-info/dependency_links.txt
+writing requirements to medbot_perception.egg-info/requires.txt
+writing top-level names to medbot_perception.egg-info/top_level.txt
+writing manifest file 'medbot_perception.egg-info/SOURCES.txt'
+reading manifest file 'medbot_perception.egg-info/SOURCES.txt'
+writing manifest file 'medbot_perception.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/vishnu/nxp_cup_ws/install/medbot_perception/lib/python3.12/site-packages/medbot-perception.egg-link (link to .)
+
+Installed /home/vishnu/nxp_cup_ws/build/medbot_perception
+running symlink_data
+creating /home/vishnu/nxp_cup_ws/install/medbot_perception/share/ament_index
+creating /home/vishnu/nxp_cup_ws/install/medbot_perception/share/ament_index/resource_index
+creating /home/vishnu/nxp_cup_ws/install/medbot_perception/share/ament_index/resource_index/packages
+symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_perception/resource/medbot_perception -> /home/vishnu/nxp_cup_ws/install/medbot_perception/share/ament_index/resource_index/packages
+symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_perception/package.xml -> /home/vishnu/nxp_cup_ws/install/medbot_perception/share/medbot_perception
+creating /home/vishnu/nxp_cup_ws/install/medbot_perception/share/medbot_perception/launch
+creating /home/vishnu/nxp_cup_ws/install/medbot_perception/share/medbot_perception/config

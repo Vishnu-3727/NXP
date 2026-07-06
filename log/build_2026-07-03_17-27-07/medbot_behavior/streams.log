@@ -1,0 +1,23 @@
+[0.786s] Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_behavior': AMENT_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-12.6/lib64:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_behavior/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishnu/nxp_cup_ws/install/medbot_behavior/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vishnu/nxp_cup_ws/build/medbot_behavior/build --no-deps symlink_data
+[0.993s] running develop
+[1.084s] running egg_info
+[1.084s] creating medbot_behavior.egg-info
+[1.095s] writing medbot_behavior.egg-info/PKG-INFO
+[1.095s] writing dependency_links to medbot_behavior.egg-info/dependency_links.txt
+[1.096s] writing requirements to medbot_behavior.egg-info/requires.txt
+[1.096s] writing top-level names to medbot_behavior.egg-info/top_level.txt
+[1.096s] writing manifest file 'medbot_behavior.egg-info/SOURCES.txt'
+[1.114s] reading manifest file 'medbot_behavior.egg-info/SOURCES.txt'
+[1.115s] writing manifest file 'medbot_behavior.egg-info/SOURCES.txt'
+[1.125s] running build_ext
+[1.125s] Creating /home/vishnu/nxp_cup_ws/install/medbot_behavior/lib/python3.12/site-packages/medbot-behavior.egg-link (link to .)
+[1.126s] 
+[1.126s] Installed /home/vishnu/nxp_cup_ws/build/medbot_behavior
+[1.126s] running symlink_data
+[1.126s] creating /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/ament_index
+[1.126s] creating /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/ament_index/resource_index
+[1.126s] creating /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/ament_index/resource_index/packages
+[1.126s] symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_behavior/resource/medbot_behavior -> /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/ament_index/resource_index/packages
+[1.126s] symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_behavior/package.xml -> /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/medbot_behavior
+[1.127s] creating /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/medbot_behavior/launch
+[1.204s] Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_behavior' returned '0': AMENT_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-12.6/lib64:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_behavior/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishnu/nxp_cup_ws/install/medbot_behavior/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vishnu/nxp_cup_ws/build/medbot_behavior/build --no-deps symlink_data

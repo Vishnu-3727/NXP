@@ -1,0 +1,4 @@
+source;share/medbot_gazebo/local_setup.bash
+source;share/medbot_gazebo/local_setup.dsv
+source;share/medbot_gazebo/local_setup.sh
+source;share/medbot_gazebo/local_setup.zsh

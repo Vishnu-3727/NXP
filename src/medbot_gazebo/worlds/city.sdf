@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<!-- M2 city world: 3x3 street grid for the medical-response mission.
+     Grid: NS/EW road lines at {-21,-7,7,21}, forming 9 blocks (interior clear
+     zones roughly 10x10m) and 16 intersections. Mission elements sit in their
+     own blocks; buildings fill the corner + south blocks.
+     Colour code (used by M5 perception):
+       roads      = dark grey     lane lines = white
+       hospital_a = RED cross     hospital_b = BLUE cross
+       patient    = GREEN         stop sign  = RED on post
+       dir sign A = RED panel      dir sign B = BLUE panel
+       barrier    = ORANGE        parked car = dark BLUE
+     Reuses the same system plugins as empty.sdf (physics/sensors/imu). -->
+<sdf version="1.10">
+  <world name="city">
+
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- ============ ground (grass/green tint) ============ -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="c"><geometry><plane><normal>0 0 1</normal><size>70 70</size></plane></geometry></collision>
+        <visual name="v">
+          <geometry><plane><normal>0 0 1</normal><size>70 70</size></plane></geometry>
+          <material><ambient>0.25 0.4 0.2 1</ambient><diffuse>0.3 0.45 0.25 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ============ road grid: 4 NS roads (x=-21,-7,7,21) x 4 EW roads (y=-21,-7,7,21) ============ -->
+    <model name="road_ns_1"><static>true</static><link name="l">
+      <collision name="c"><pose>-21 0 0.01 0 0 0</pose><geometry><box><size>4 50 0.02</size></box></geometry></collision>
+      <visual name="v"><pose>-21 0 0.01 0 0 0</pose><geometry><box><size>4 50 0.02</size></box></geometry>
+      <material><ambient>0.18 0.18 0.18 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material></visual></link></model>
+    <model name="road_ns_2"><static>true</static><link name="l">
+      <collision name="c"><pose>-7 0 0.01 0 0 0</pose><geometry><box><size>4 50 0.02</size></box></geometry></collision>
+      <visual name="v"><pose>-7 0 0.01 0 0 0</pose><geometry><box><size>4 50 0.02</size></box></geometry>
+      <material><ambient>0.18 0.18 0.18 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material></visual></link></model>
+    <model name="road_ns_3"><static>true</static><link name="l">
+      <collision name="c"><pose>7 0 0.01 0 0 0</pose><geometry><box><size>4 50 0.02</size></box></geometry></collision>
+      <visual name="v"><pose>7 0 0.01 0 0 0</pose><geometry><box><size>4 50 0.02</size></box></geometry>
+      <material><ambient>0.18 0.18 0.18 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material></visual></link></model>
+    <model name="road_ns_4"><static>true</static><link name="l">
+      <collision name="c"><pose>21 0 0.01 0 0 0</pose><geometry><box><size>4 50 0.02</size></box></geometry></collision>
+      <visual name="v"><pose>21 0 0.01 0 0 0</pose><geometry><box><size>4 50 0.02</size></box></geometry>
+      <material><ambient>0.18 0.18 0.18 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material></visual></link></model>
+
+    <model name="road_ew_1"><static>true</static><link name="l">
+      <collision name="c"><pose>0 -21 0.01 0 0 0</pose><geometry><box><size>50 4 0.02</size></box></geometry></collision>
+      <visual name="v"><pose>0 -21 0.01 0 0 0</pose><geometry><box><size>50 4 0.02</size></box></geometry>
+      <material><ambient>0.18 0.18 0.18 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material></visual></link></model>
+    <model name="road_ew_2"><static>true</static><link name="l">
+      <collision name="c"><pose>0 -7 0.01 0 0 0</pose><geometry><box><size>50 4 0.02</size></box></geometry></collision>
+      <visual name="v"><pose>0 -7 0.01 0 0 0</pose><geometry><box><size>50 4 0.02</size></box></geometry>
+      <material><ambient>0.18 0.18 0.18 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material></visual></link></model>
+    <model name="road_ew_3"><static>true</static><link name="l">
+      <collision name="c"><pose>0 7 0.01 0 0 0</pose><geometry><box><size>50 4 0.02</size></box></geometry></collision>
+      <visual name="v"><pose>0 7 0.01 0 0 0</pose><geometry><box><size>50 4 0.02</size></box></geometry>
+      <material><ambient>0.18 0.18 0.18 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material></visual></link></model>
+    <model name="road_ew_4"><static>true</static><link name="l">
+      <collision name="c"><pose>0 21 0.01 0 0 0</pose><geometry><box><size>50 4 0.02</size></box></geometry></collision>
+      <visual name="v"><pose>0 21 0.01 0 0 0</pose><geometry><box><size>50 4 0.02</size></box></geometry>
+      <material><ambient>0.18 0.18 0.18 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material></visual></link></model>
+
+    <!-- lane edge lines (white) on the centre cross — CV reference -->
+    <model name="lane_ew_n"><static>true</static><link name="l">
+      <visual name="v"><pose>0 1.9 0.022 0 0 0</pose><geometry><box><size>50 0.1 0.005</size></box></geometry>
+      <material><ambient>0.9 0.9 0.9 1</ambient><diffuse>1 1 1 1</diffuse></material></visual></link></model>
+    <model name="lane_ew_s"><static>true</static><link name="l">
+      <visual name="v"><pose>0 -1.9 0.022 0 0 0</pose><geometry><box><size>50 0.1 0.005</size></box></geometry>
+      <material><ambient>0.9 0.9 0.9 1</ambient><diffuse>1 1 1 1</diffuse></material></visual></link></model>
+    <model name="lane_ns_e"><static>true</static><link name="l">
+      <visual name="v"><pose>1.9 0 0.022 0 0 0</pose><geometry><box><size>0.1 50 0.005</size></box></geometry>
+      <material><ambient>0.9 0.9 0.9 1</ambient><diffuse>1 1 1 1</diffuse></material></visual></link></model>
+    <model name="lane_ns_w"><static>true</static><link name="l">
+      <visual name="v"><pose>-1.9 0 0.022 0 0 0</pose><geometry><box><size>0.1 50 0.005</size></box></geometry>
+      <material><ambient>0.9 0.9 0.9 1</ambient><diffuse>1 1 1 1</diffuse></material></visual></link></model>
+
+    <!-- pedestrian crossing stripes at the centre-north intersection (x=0,y=7) -->
+    <model name="crossing"><static>true</static><link name="l">
+      <visual name="s1"><pose>-1.2 7 0.022 0 0 0</pose><geometry><box><size>0.4 1.6 0.005</size></box></geometry><material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material></visual>
+      <visual name="s2"><pose>-0.4 7 0.022 0 0 0</pose><geometry><box><size>0.4 1.6 0.005</size></box></geometry><material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material></visual>
+      <visual name="s3"><pose> 0.4 7 0.022 0 0 0</pose><geometry><box><size>0.4 1.6 0.005</size></box></geometry><material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material></visual>
+      <visual name="s4"><pose> 1.2 7 0.022 0 0 0</pose><geometry><box><size>0.4 1.6 0.005</size></box></geometry><material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material></visual>
+    </link></model>
+
+    <!-- ============ buildings: 2 per corner block + 2 in the south block ============ -->
+    <model name="building_1"><static>true</static><link name="l">
+      <collision name="c"><pose>12 12 1.5 0 0 0</pose><geometry><box><size>4 4 3</size></box></geometry></collision>
+      <visual name="v"><pose>12 12 1.5 0 0 0</pose><geometry><box><size>4 4 3</size></box></geometry>
+      <material><ambient>0.6 0.55 0.45 1</ambient><diffuse>0.7 0.65 0.5 1</diffuse></material></visual></link></model>
+    <model name="building_2"><static>true</static><link name="l">
+      <collision name="c"><pose>17 17 1.8 0 0 0</pose><geometry><box><size>4 4 3.6</size></box></geometry></collision>
+      <visual name="v"><pose>17 17 1.8 0 0 0</pose><geometry><box><size>4 4 3.6</size></box></geometry>
+      <material><ambient>0.55 0.5 0.6 1</ambient><diffuse>0.65 0.6 0.7 1</diffuse></material></visual></link></model>
+
+    <model name="building_3"><static>true</static><link name="l">
+      <collision name="c"><pose>-12 12 1.6 0 0 0</pose><geometry><box><size>4 4 3.2</size></box></geometry></collision>
+      <visual name="v"><pose>-12 12 1.6 0 0 0</pose><geometry><box><size>4 4 3.2</size></box></geometry>
+      <material><ambient>0.5 0.5 0.55 1</ambient><diffuse>0.6 0.6 0.65 1</diffuse></material></visual></link></model>
+    <model name="building_4"><static>true</static><link name="l">
+      <collision name="c"><pose>-17 17 1.9 0 0 0</pose><geometry><box><size>4 4 3.8</size></box></geometry></collision>
+      <visual name="v"><pose>-17 17 1.9 0 0 0</pose><geometry><box><size>4 4 3.8</size></box></geometry>
+      <material><ambient>0.6 0.5 0.4 1</ambient><diffuse>0.7 0.6 0.5 1</diffuse></material></visual></link></model>
+
+    <model name="building_5"><static>true</static><link name="l">
+      <collision name="c"><pose>12 -12 1.5 0 0 0</pose><geometry><box><size>4 4 3</size></box></geometry></collision>
+      <visual name="v"><pose>12 -12 1.5 0 0 0</pose><geometry><box><size>4 4 3</size></box></geometry>
+      <material><ambient>0.6 0.55 0.45 1</ambient><diffuse>0.7 0.65 0.5 1</diffuse></material></visual></link></model>
+    <model name="building_6"><static>true</static><link name="l">
+      <collision name="c"><pose>17 -17 1.7 0 0 0</pose><geometry><box><size>4 4 3.4</size></box></geometry></collision>
+      <visual name="v"><pose>17 -17 1.7 0 0 0</pose><geometry><box><size>4 4 3.4</size></box></geometry>
+      <material><ambient>0.55 0.5 0.6 1</ambient><diffuse>0.65 0.6 0.7 1</diffuse></material></visual></link></model>
+
+    <model name="building_7"><static>true</static><link name="l">
+      <collision name="c"><pose>-12 -12 1.8 0 0 0</pose><geometry><box><size>4 4 3.6</size></box></geometry></collision>
+      <visual name="v"><pose>-12 -12 1.8 0 0 0</pose><geometry><box><size>4 4 3.6</size></box></geometry>
+      <material><ambient>0.5 0.5 0.55 1</ambient><diffuse>0.6 0.6 0.65 1</diffuse></material></visual></link></model>
+    <model name="building_8"><static>true</static><link name="l">
+      <collision name="c"><pose>-17 -17 2.0 0 0 0</pose><geometry><box><size>4 4 4</size></box></geometry></collision>
+      <visual name="v"><pose>-17 -17 2.0 0 0 0</pose><geometry><box><size>4 4 4</size></box></geometry>
+      <material><ambient>0.6 0.5 0.4 1</ambient><diffuse>0.7 0.6 0.5 1</diffuse></material></visual></link></model>
+
+    <model name="building_9"><static>true</static><link name="l">
+      <collision name="c"><pose>-2 -14 1.5 0 0 0</pose><geometry><box><size>3.5 3.5 3</size></box></geometry></collision>
+      <visual name="v"><pose>-2 -14 1.5 0 0 0</pose><geometry><box><size>3.5 3.5 3</size></box></geometry>
+      <material><ambient>0.55 0.5 0.6 1</ambient><diffuse>0.65 0.6 0.7 1</diffuse></material></visual></link></model>
+    <model name="building_10"><static>true</static><link name="l">
+      <collision name="c"><pose>3 -16 1.7 0 0 0</pose><geometry><box><size>3.5 3.5 3.4</size></box></geometry></collision>
+      <visual name="v"><pose>3 -16 1.7 0 0 0</pose><geometry><box><size>3.5 3.5 3.4</size></box></geometry>
+      <material><ambient>0.6 0.55 0.45 1</ambient><diffuse>0.7 0.65 0.5 1</diffuse></material></visual></link></model>
+
+    <!-- ============ hospital_a (east block, RED cross) ============ -->
+    <model name="hospital_a"><static>true</static><link name="l">
+      <collision name="c"><pose>14 0 2 0 0 0</pose><geometry><box><size>4 6 4</size></box></geometry></collision>
+      <visual name="body"><pose>14 0 2 0 0 0</pose><geometry><box><size>4 6 4</size></box></geometry>
+        <material><ambient>0.9 0.9 0.9 1</ambient><diffuse>0.95 0.95 0.95 1</diffuse></material></visual>
+      <!-- red cross on the west-facing wall (toward intersection) -->
+      <visual name="cross_v"><pose>11.98 0 2.2 0 1.5708 0</pose><geometry><box><size>2 0.5 0.05</size></box></geometry>
+        <material><ambient>0.9 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material></visual>
+      <visual name="cross_h"><pose>11.98 0 2.2 0 1.5708 0</pose><geometry><box><size>0.5 2 0.05</size></box></geometry>
+        <material><ambient>0.9 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material></visual>
+    </link></model>
+
+    <!-- ============ hospital_b (west block, BLUE cross) ============ -->
+    <model name="hospital_b"><static>true</static><link name="l">
+      <collision name="c"><pose>-14 0 2 0 0 0</pose><geometry><box><size>4 6 4</size></box></geometry></collision>
+      <visual name="body"><pose>-14 0 2 0 0 0</pose><geometry><box><size>4 6 4</size></box></geometry>
+        <material><ambient>0.9 0.9 0.9 1</ambient><diffuse>0.95 0.95 0.95 1</diffuse></material></visual>
+      <visual name="cross_v"><pose>-11.98 0 2.2 0 1.5708 0</pose><geometry><box><size>2 0.5 0.05</size></box></geometry>
+        <material><ambient>0 0 0.9 1</ambient><diffuse>0 0 1 1</diffuse></material></visual>
+      <visual name="cross_h"><pose>-11.98 0 2.2 0 1.5708 0</pose><geometry><box><size>0.5 2 0.05</size></box></geometry>
+        <material><ambient>0 0 0.9 1</ambient><diffuse>0 0 1 1</diffuse></material></visual>
+    </link></model>
+
+    <!-- ============ patient (GREEN, north block pickup) ============ -->
+    <model name="patient"><static>true</static><link name="l">
+      <collision name="c"><pose>2 14 0.6 0 0 0</pose><geometry><cylinder><radius>0.25</radius><length>1.2</length></cylinder></geometry></collision>
+      <visual name="v"><pose>2 14 0.6 0 0 0</pose><geometry><cylinder><radius>0.25</radius><length>1.2</length></cylinder></geometry>
+        <material><ambient>0 0.8 0.2 1</ambient><diffuse>0 0.9 0.25 1</diffuse></material></visual>
+    </link></model>
+
+    <!-- ============ signs (near the centre intersection) ============ -->
+    <model name="stop_sign"><static>true</static><link name="l">
+      <visual name="post"><pose>2.4 2.4 0.6 0 0 0</pose><geometry><cylinder><radius>0.04</radius><length>1.2</length></cylinder></geometry><material><ambient>0.3 0.3 0.3 1</ambient><diffuse>0.3 0.3 0.3 1</diffuse></material></visual>
+      <visual name="face"><pose>2.4 2.4 1.3 0 0 0</pose><geometry><box><size>0.05 0.5 0.5</size></box></geometry><material><ambient>0.9 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material></visual>
+    </link></model>
+    <model name="dirsign_a"><static>true</static><link name="l">
+      <visual name="post"><pose>0.5 3 0.6 0 0 0</pose><geometry><cylinder><radius>0.04</radius><length>1.2</length></cylinder></geometry><material><ambient>0.3 0.3 0.3 1</ambient><diffuse>0.3 0.3 0.3 1</diffuse></material></visual>
+      <visual name="panel"><pose>0.5 3 1.3 0 0 0</pose><geometry><box><size>0.05 0.7 0.35</size></box></geometry><material><ambient>0.9 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material></visual>
+    </link></model>
+    <model name="dirsign_b"><static>true</static><link name="l">
+      <visual name="post"><pose>-0.5 3 0.6 0 0 0</pose><geometry><cylinder><radius>0.04</radius><length>1.2</length></cylinder></geometry><material><ambient>0.3 0.3 0.3 1</ambient><diffuse>0.3 0.3 0.3 1</diffuse></material></visual>
+      <visual name="panel"><pose>-0.5 3 1.3 0 0 0</pose><geometry><box><size>0.05 0.7 0.35</size></box></geometry><material><ambient>0 0 0.9 1</ambient><diffuse>0 0 1 1</diffuse></material></visual>
+    </link></model>
+
+    <!-- ============ static obstacles (spread across the grid's road corridors) ============ -->
+    <!-- ORANGE barrier partly blocking the south approach -->
+    <model name="barrier"><static>true</static><link name="l">
+      <collision name="c"><pose>0.8 -4 0.3 0 0 0</pose><geometry><box><size>1.4 0.4 0.6</size></box></geometry></collision>
+      <visual name="v"><pose>0.8 -4 0.3 0 0 0</pose><geometry><box><size>1.4 0.4 0.6</size></box></geometry>
+        <material><ambient>0.9 0.45 0 1</ambient><diffuse>1 0.5 0 1</diffuse></material></visual>
+    </link></model>
+    <!-- parked car (dark blue) on the east approach shoulder -->
+    <model name="parked_car"><static>true</static><link name="l">
+      <collision name="c"><pose>4 1.3 0.35 0 0 0</pose><geometry><box><size>1.8 0.8 0.7</size></box></geometry></collision>
+      <visual name="v"><pose>4 1.3 0.35 0 0 0</pose><geometry><box><size>1.8 0.8 0.7</size></box></geometry>
+        <material><ambient>0.05 0.1 0.4 1</ambient><diffuse>0.1 0.15 0.5 1</diffuse></material></visual>
+    </link></model>
+    <!-- barrier on the road_ns_2 corridor (x=-7), north of centre -->
+    <model name="barrier_2"><static>true</static><link name="l">
+      <collision name="c"><pose>-10.5 4 0.3 0 0 0</pose><geometry><box><size>0.4 1.4 0.6</size></box></geometry></collision>
+      <visual name="v"><pose>-10.5 4 0.3 0 0 0</pose><geometry><box><size>0.4 1.4 0.6</size></box></geometry>
+        <material><ambient>0.9 0.45 0 1</ambient><diffuse>1 0.5 0 1</diffuse></material></visual>
+    </link></model>
+    <!-- parked car on the road_ns_3 corridor (x=7), south of centre -->
+    <model name="parked_car_2"><static>true</static><link name="l">
+      <collision name="c"><pose>10.5 -4.5 0.35 0 0 1.5708</pose><geometry><box><size>1.8 0.8 0.7</size></box></geometry></collision>
+      <visual name="v"><pose>10.5 -4.5 0.35 0 0 1.5708</pose><geometry><box><size>1.8 0.8 0.7</size></box></geometry>
+        <material><ambient>0.4 0.05 0.05 1</ambient><diffuse>0.5 0.1 0.1 1</diffuse></material></visual>
+    </link></model>
+    <!-- traffic cones (orange) clustered near the road_ew_3 corridor (y=7), east side -->
+    <model name="cone_1"><static>true</static><link name="l">
+      <visual name="v"><pose>13 8 0.25 0 0 0</pose><geometry><cylinder><radius>0.15</radius><length>0.5</length></cylinder></geometry>
+        <material><ambient>0.9 0.45 0 1</ambient><diffuse>1 0.5 0 1</diffuse></material></visual></link></model>
+    <model name="cone_2"><static>true</static><link name="l">
+      <visual name="v"><pose>13.6 8.3 0.25 0 0 0</pose><geometry><cylinder><radius>0.15</radius><length>0.5</length></cylinder></geometry>
+        <material><ambient>0.9 0.45 0 1</ambient><diffuse>1 0.5 0 1</diffuse></material></visual></link></model>
+    <!-- barrier blocking half of the road_ew_2 corridor (y=-7), west side -->
+    <model name="barrier_3"><static>true</static><link name="l">
+      <collision name="c"><pose>-11 -9 0.3 0 0 0</pose><geometry><box><size>1.4 0.4 0.6</size></box></geometry></collision>
+      <visual name="v"><pose>-11 -9 0.3 0 0 0</pose><geometry><box><size>1.4 0.4 0.6</size></box></geometry>
+        <material><ambient>0.9 0.45 0 1</ambient><diffuse>1 0.5 0 1</diffuse></material></visual>
+    </link></model>
+
+    <!-- ============ dynamic actors -> STATIC obstacles ============ -->
+    <!-- ponytail: <actor> with primitive geometry + <script> trajectory SEGFAULTS
+         the Harmonic gz server ~5s after load (exit 139; "Link's parent entity not
+         found on model map") — it crashed nxp-sim's GUI on open and starved the nav
+         stack of odom/TF. Replaced the two actors with static models so the sim is
+         stable and perception/costmap still see them. Upgrade path for real motion:
+         an animated-mesh (Collada/skin) actor, or a <model> moved by the
+         gz::sim::systems::TrajectoryFollower plugin — neither is a primitive actor. -->
+    <!-- pedestrian on the centre-north crossing (GREEN) -->
+    <model name="pedestrian"><static>true</static><link name="l">
+      <collision name="c"><pose>0 10 0.8 0 0 0</pose><geometry><cylinder><radius>0.22</radius><length>1.6</length></cylinder></geometry></collision>
+      <visual name="v"><pose>0 10 0.8 0 0 0</pose><geometry><cylinder><radius>0.22</radius><length>1.6</length></cylinder></geometry>
+        <material><ambient>0.1 0.7 0.3 1</ambient><diffuse>0.1 0.8 0.35 1</diffuse></material></visual>
+    </link></model>
+
+    <!-- vehicle stopped on the east-west corridor south of centre (YELLOW) -->
+    <model name="vehicle"><static>true</static><link name="l">
+      <collision name="c"><pose>-3 -3 0.35 0 0 0</pose><geometry><box><size>1.8 0.9 0.7</size></box></geometry></collision>
+      <visual name="v"><pose>-3 -3 0.35 0 0 0</pose><geometry><box><size>1.8 0.9 0.7</size></box></geometry>
+        <material><ambient>0.8 0.7 0 1</ambient><diffuse>0.9 0.8 0 1</diffuse></material></visual>
+    </link></model>
+
+  </world>
+</sdf>

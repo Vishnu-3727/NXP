@@ -1,0 +1,17 @@
+[0.585s] Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vishnu/nxp_cup_ws/build/medbot_navigation/build --no-deps symlink_data
+[0.751s] running develop
+[0.831s] running egg_info
+[0.840s] writing medbot_navigation.egg-info/PKG-INFO
+[0.840s] writing dependency_links to medbot_navigation.egg-info/dependency_links.txt
+[0.840s] writing entry points to medbot_navigation.egg-info/entry_points.txt
+[0.840s] writing requirements to medbot_navigation.egg-info/requires.txt
+[0.840s] writing top-level names to medbot_navigation.egg-info/top_level.txt
+[0.856s] reading manifest file 'medbot_navigation.egg-info/SOURCES.txt'
+[0.856s] writing manifest file 'medbot_navigation.egg-info/SOURCES.txt'
+[0.865s] running build_ext
+[0.865s] Creating /home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages/medbot-navigation.egg-link (link to .)
+[0.865s] Installing wander_route script to /home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/medbot_navigation
+[0.865s] 
+[0.865s] Installed /home/vishnu/nxp_cup_ws/build/medbot_navigation
+[0.865s] running symlink_data
+[0.887s] Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vishnu/nxp_cup_ws/build/medbot_navigation/build --no-deps symlink_data

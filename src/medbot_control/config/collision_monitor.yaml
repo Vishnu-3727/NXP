@@ -1,0 +1,49 @@
+# nav2_collision_monitor: sits between patrol_demo's raw cmd_vel and the wheels,
+# stopping/slowing the robot using live LIDAR data. No map/AMCL needed -- this is
+# the official Nav2 replacement for the "safety_stop" node from the plan.
+collision_monitor:
+  ros__parameters:
+    use_sim_time: true
+    enable_stamped_cmd_vel: true
+    base_frame_id: "base_footprint"
+    odom_frame_id: "odom"
+    cmd_vel_in_topic: "cmd_vel_raw"
+    cmd_vel_out_topic: "diff_drive_controller/cmd_vel"
+    state_topic: "collision_monitor_state"
+    transform_tolerance: 0.5
+    source_timeout: 2.0
+    # false = use the LATEST tf, not the tf at each scan's exact stamp. With true,
+    # the fast headless sim clock keeps tripping tf2's "jump back in time" buffer
+    # clear, so the scan-time lookup fails, scans are dropped, the source goes
+    # "invalid" after source_timeout, and the monitor STOPS the robot on clear road
+    # (raw cmd_vx 0.18 but wheels 0 ~85% of the time -> crawl + stop-start jerk).
+    # The shift is negligible at ~0.15 m/s, so latest-tf is safe here.
+    base_shift_correction: false
+    stop_pub_timeout: 2.0
+
+    polygons: ["PolygonStop", "PolygonSlow"]
+    # stop zone: ~0.35m ahead of the 0.33x0.28m chassis
+    PolygonStop:
+      type: "polygon"
+      points: "[[0.35, 0.25], [0.35, -0.25], [0.0, -0.25], [0.0, 0.25]]"
+      action_type: "stop"
+      min_points: 4
+      visualize: true
+      polygon_pub_topic: "polygon_stop"
+      enabled: true
+    # slowdown zone: ~0.7m ahead, 50% speed
+    PolygonSlow:
+      type: "polygon"
+      points: "[[0.7, 0.35], [0.7, -0.35], [0.0, -0.35], [0.0, 0.35]]"
+      action_type: "slowdown"
+      min_points: 4
+      slowdown_ratio: 0.5
+      visualize: true
+      polygon_pub_topic: "polygon_slowdown"
+      enabled: true
+
+    observation_sources: ["scan"]
+    scan:
+      type: "scan"
+      topic: "scan"
+      enabled: true

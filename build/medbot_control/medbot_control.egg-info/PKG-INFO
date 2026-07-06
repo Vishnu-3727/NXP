@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: medbot-control
+Version: 0.1.0
+Summary: Control and safety for the medical-response rover.
+Maintainer: vishnu
+Maintainer-email: vishnuvardhanks113@gmail.com
+License: Apache-2.0

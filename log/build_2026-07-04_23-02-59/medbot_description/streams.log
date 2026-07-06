@@ -1,0 +1,26 @@
+[0.012s] Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --build /home/vishnu/nxp_cup_ws/build/medbot_description -- -j24 -l24
+[0.044s] Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --build /home/vishnu/nxp_cup_ws/build/medbot_description -- -j24 -l24
+[0.050s] Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --install /home/vishnu/nxp_cup_ws/build/medbot_description
+[0.060s] -- Install configuration: ""
+[0.060s] -- Execute custom install script
+[0.061s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/urdf/base.xacro
+[0.061s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/urdf/medbot.urdf.xacro
+[0.061s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/urdf/ros2_control.xacro
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/urdf/sensors.xacro
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/config/controllers.yaml
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/ament_index/resource_index/package_run_dependencies/medbot_description
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/ament_index/resource_index/parent_prefix_path/medbot_description
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/environment/ament_prefix_path.sh
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/environment/ament_prefix_path.dsv
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/environment/path.sh
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/environment/path.dsv
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/local_setup.bash
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/local_setup.sh
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/local_setup.zsh
+[0.062s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/local_setup.dsv
+[0.063s] -- Symlinking: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/package.dsv
+[0.070s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/ament_index/resource_index/packages/medbot_description
+[0.070s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/cmake/medbot_descriptionConfig.cmake
+[0.070s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/cmake/medbot_descriptionConfig-version.cmake
+[0.070s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_description/share/medbot_description/package.xml
+[0.071s] Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --install /home/vishnu/nxp_cup_ws/build/medbot_description

@@ -1,0 +1,6 @@
+msg/Detection.idl
+msg/Detection.msg
+msg/MissionState.idl
+msg/MissionState.msg
+msg/Patient.idl
+msg/Patient.msg

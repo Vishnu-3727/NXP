@@ -1,0 +1,291 @@
+[0.051s] DEBUG:colcon:Command line arguments: ['/bin/colcon', 'build', '--packages-select', 'medbot_navigation', 'medbot_bringup', '--symlink-install']
+[0.051s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['medbot_navigation', 'medbot_bringup'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7de6fa493800>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7de6fa4064b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7de6fa4064b0>>, mixin_verb=('build',))
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.071s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/vishnu/nxp_cup_ws'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.072s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extensions ['ignore', 'ignore_ament_install']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extension 'ignore'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extension 'ignore_ament_install'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extensions ['colcon_pkg']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extension 'colcon_pkg'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extensions ['colcon_meta']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extension 'colcon_meta'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extensions ['ros']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extension 'ros'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extensions ['cmake', 'python']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extension 'cmake'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extension 'python'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extensions ['python_setup_py']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(reports) by extension 'python_setup_py'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_behavior) by extensions ['ignore', 'ignore_ament_install']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_behavior) by extension 'ignore'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_behavior) by extension 'ignore_ament_install'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_behavior) by extensions ['colcon_pkg']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_behavior) by extension 'colcon_pkg'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_behavior) by extensions ['colcon_meta']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_behavior) by extension 'colcon_meta'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_behavior) by extensions ['ros']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_behavior) by extension 'ros'
+[0.087s] DEBUG:colcon.colcon_core.package_identification:Package 'src/medbot_behavior' with type 'ros.ament_python' and name 'medbot_behavior'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_bringup) by extension 'ignore'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_bringup) by extension 'ignore_ament_install'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_bringup) by extensions ['colcon_pkg']
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_bringup) by extension 'colcon_pkg'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_bringup) by extensions ['colcon_meta']
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_bringup) by extension 'colcon_meta'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_bringup) by extensions ['ros']
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_bringup) by extension 'ros'
+[0.088s] DEBUG:colcon.colcon_core.package_identification:Package 'src/medbot_bringup' with type 'ros.ament_cmake' and name 'medbot_bringup'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_control) by extensions ['ignore', 'ignore_ament_install']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_control) by extension 'ignore'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_control) by extension 'ignore_ament_install'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_control) by extensions ['colcon_pkg']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_control) by extension 'colcon_pkg'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_control) by extensions ['colcon_meta']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_control) by extension 'colcon_meta'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_control) by extensions ['ros']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_control) by extension 'ros'
+[0.088s] DEBUG:colcon.colcon_core.package_identification:Package 'src/medbot_control' with type 'ros.ament_python' and name 'medbot_control'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_description) by extension 'ignore'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_description) by extension 'ignore_ament_install'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_description) by extensions ['colcon_pkg']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_description) by extension 'colcon_pkg'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_description) by extensions ['colcon_meta']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_description) by extension 'colcon_meta'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_description) by extensions ['ros']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_description) by extension 'ros'
+[0.088s] DEBUG:colcon.colcon_core.package_identification:Package 'src/medbot_description' with type 'ros.ament_cmake' and name 'medbot_description'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_gazebo) by extension 'ignore'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_gazebo) by extension 'ignore_ament_install'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_gazebo) by extensions ['colcon_pkg']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_gazebo) by extension 'colcon_pkg'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_gazebo) by extensions ['colcon_meta']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_gazebo) by extension 'colcon_meta'
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_gazebo) by extensions ['ros']
+[0.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_gazebo) by extension 'ros'
+[0.089s] DEBUG:colcon.colcon_core.package_identification:Package 'src/medbot_gazebo' with type 'ros.ament_cmake' and name 'medbot_gazebo'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_localization) by extension 'ignore'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_localization) by extension 'ignore_ament_install'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_localization) by extensions ['colcon_pkg']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_localization) by extension 'colcon_pkg'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_localization) by extensions ['colcon_meta']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_localization) by extension 'colcon_meta'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_localization) by extensions ['ros']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_localization) by extension 'ros'
+[0.089s] DEBUG:colcon.colcon_core.package_identification:Package 'src/medbot_localization' with type 'ros.ament_cmake' and name 'medbot_localization'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_msgs) by extension 'ignore'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_msgs) by extension 'ignore_ament_install'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_msgs) by extensions ['colcon_pkg']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_msgs) by extension 'colcon_pkg'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_msgs) by extensions ['colcon_meta']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_msgs) by extension 'colcon_meta'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_msgs) by extensions ['ros']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_msgs) by extension 'ros'
+[0.089s] DEBUG:colcon.colcon_core.package_identification:Package 'src/medbot_msgs' with type 'ros.ament_cmake' and name 'medbot_msgs'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_navigation) by extension 'ignore'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_navigation) by extension 'ignore_ament_install'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_navigation) by extensions ['colcon_pkg']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_navigation) by extension 'colcon_pkg'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_navigation) by extensions ['colcon_meta']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_navigation) by extension 'colcon_meta'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_navigation) by extensions ['ros']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_navigation) by extension 'ros'
+[0.090s] DEBUG:colcon.colcon_core.package_identification:Package 'src/medbot_navigation' with type 'ros.ament_python' and name 'medbot_navigation'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_perception) by extension 'ignore'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_perception) by extension 'ignore_ament_install'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_perception) by extensions ['colcon_pkg']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_perception) by extension 'colcon_pkg'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_perception) by extensions ['colcon_meta']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_perception) by extension 'colcon_meta'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_perception) by extensions ['ros']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/medbot_perception) by extension 'ros'
+[0.090s] DEBUG:colcon.colcon_core.package_identification:Package 'src/medbot_perception' with type 'ros.ament_python' and name 'medbot_perception'
+[0.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.090s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.100s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'medbot_control' in 'src/medbot_control'
+[0.100s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'medbot_description' in 'src/medbot_description'
+[0.100s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'medbot_localization' in 'src/medbot_localization'
+[0.100s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'medbot_msgs' in 'src/medbot_msgs'
+[0.100s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'medbot_behavior' in 'src/medbot_behavior'
+[0.100s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'medbot_gazebo' in 'src/medbot_gazebo'
+[0.100s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'medbot_perception' in 'src/medbot_perception'
+[0.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.101s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 409 installed packages in /opt/ros/jazzy
+[0.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_navigation' build argument 'cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_navigation' build argument 'cmake_target' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.127s] DEBUG:colcon.colcon_core.verb:Building package 'medbot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vishnu/nxp_cup_ws/build/medbot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vishnu/nxp_cup_ws/install/medbot_navigation', 'merge_install': False, 'path': '/home/vishnu/nxp_cup_ws/src/medbot_navigation', 'symlink_install': True, 'test_result_base': None}
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.127s] Level 5:colcon.colcon_core.verb:set package 'medbot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.127s] DEBUG:colcon.colcon_core.verb:Building package 'medbot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vishnu/nxp_cup_ws/build/medbot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vishnu/nxp_cup_ws/install/medbot_bringup', 'merge_install': False, 'path': '/home/vishnu/nxp_cup_ws/src/medbot_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.127s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.128s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.128s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vishnu/nxp_cup_ws/src/medbot_navigation' with build type 'ament_python'
+[0.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('medbot_navigation', 'ament_prefix_path')
+[0.129s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/hook/ament_prefix_path.ps1'
+[0.130s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/hook/ament_prefix_path.dsv'
+[0.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/hook/ament_prefix_path.sh'
+[0.130s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.130s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.234s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vishnu/nxp_cup_ws/src/medbot_navigation'
+[0.234s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.234s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.504s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: develop, dist_info, clean, build_py, sdist, bdist_wheel, bdist_egg, update_catalog, bdist_rpm, build_scripts, install_headers, build_ext, init_catalog, editable_wheel, bdist, extract_messages, bdist_dumb, upload_docs, test, symlink_data, install_scripts, install_lib, build, install_egg_info, alias, rotate, setopt, upload, compile_catalog, check, saveopts, install, register, easy_install, install_data, build_clib, egg_info
+[0.664s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --version, --no-user-cfg, --verbose, --optimize, --dry-run, --build-directory, --zip-ok, --allow-hosts, --editable, --site-dirs, --no-find-links, --install-dir, --upgrade, --multi-version, --help, --index-url, --force-installation-into-system-dir, --script-dir, --find-links, --quiet, --uninstall, --prefix, --user, --egg-path, --always-copy, --exclude-scripts, --record, --no-deps, --local-snapshots-ok, --install-layout, --always-unzip
+[0.664s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/ament_index/resource_index/packages/medbot_navigation
+[0.664s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/package.xml
+[0.664s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/launch/local_nav.launch.py
+[0.664s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/config/nav2_params.yaml
+[0.664s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/medbot_navigation/wander_route
+[0.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_navigation': PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vishnu/nxp_cup_ws/build/medbot_navigation/build --no-deps symlink_data --force
+[0.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('medbot_navigation', 'pythonpath_develop')
+[0.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vishnu/nxp_cup_ws/build/medbot_navigation/share/medbot_navigation/hook/pythonpath_develop.ps1'
+[0.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_navigation' returned '0': PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vishnu/nxp_cup_ws/build/medbot_navigation/build --no-deps symlink_data --force
+[0.957s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vishnu/nxp_cup_ws/build/medbot_navigation/share/medbot_navigation/hook/pythonpath_develop.dsv'
+[0.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vishnu/nxp_cup_ws/build/medbot_navigation/share/medbot_navigation/hook/pythonpath_develop.sh'
+[0.959s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_navigation' for CMake module files
+[0.959s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_navigation' for CMake config files
+[0.959s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib'
+[0.960s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_navigation/bin'
+[0.960s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/pkgconfig/medbot_navigation.pc'
+[0.960s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages'
+[0.960s] Level 1:colcon.colcon_core.shell:create_environment_hook('medbot_navigation', 'pythonpath')
+[0.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/hook/pythonpath.ps1'
+[0.960s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/hook/pythonpath.dsv'
+[0.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/hook/pythonpath.sh'
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_navigation/bin'
+[0.961s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(medbot_navigation)
+[0.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/package.ps1'
+[0.961s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/package.dsv'
+[0.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/package.sh'
+[0.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/package.bash'
+[0.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/package.zsh'
+[0.962s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vishnu/nxp_cup_ws/install/medbot_navigation/share/colcon-core/packages/medbot_navigation)
+[0.962s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vishnu/nxp_cup_ws/src/medbot_bringup' with build type 'ament_cmake'
+[0.963s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vishnu/nxp_cup_ws/src/medbot_bringup'
+[0.963s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.963s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_bringup': AMENT_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_perception:/home/vishnu/nxp_cup_ws/install/medbot_gazebo:/home/vishnu/nxp_cup_ws/install/medbot_behavior:/home/vishnu/nxp_cup_ws/install/medbot_navigation:/home/vishnu/nxp_cup_ws/install/medbot_msgs:/home/vishnu/nxp_cup_ws/install/medbot_localization:/home/vishnu/nxp_cup_ws/install/medbot_description:/home/vishnu/nxp_cup_ws/install/medbot_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_gazebo:/home/vishnu/nxp_cup_ws/install/medbot_msgs:/home/vishnu/nxp_cup_ws/install/medbot_localization:/home/vishnu/nxp_cup_ws/install/medbot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-12.6/lib64:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_perception:/home/vishnu/nxp_cup_ws/install/medbot_perception/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_behavior:/home/vishnu/nxp_cup_ws/install/medbot_behavior/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_navigation:/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_control:/home/vishnu/nxp_cup_ws/install/medbot_control/lib/python3.12/site-packages:${PYTHONPATH} /bin/cmake --build /home/vishnu/nxp_cup_ws/build/medbot_bringup -- -j24 -l24
+[1.012s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_bringup' returned '0': AMENT_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_perception:/home/vishnu/nxp_cup_ws/install/medbot_gazebo:/home/vishnu/nxp_cup_ws/install/medbot_behavior:/home/vishnu/nxp_cup_ws/install/medbot_navigation:/home/vishnu/nxp_cup_ws/install/medbot_msgs:/home/vishnu/nxp_cup_ws/install/medbot_localization:/home/vishnu/nxp_cup_ws/install/medbot_description:/home/vishnu/nxp_cup_ws/install/medbot_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_gazebo:/home/vishnu/nxp_cup_ws/install/medbot_msgs:/home/vishnu/nxp_cup_ws/install/medbot_localization:/home/vishnu/nxp_cup_ws/install/medbot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-12.6/lib64:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_perception:/home/vishnu/nxp_cup_ws/install/medbot_perception/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_behavior:/home/vishnu/nxp_cup_ws/install/medbot_behavior/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_navigation:/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_control:/home/vishnu/nxp_cup_ws/install/medbot_control/lib/python3.12/site-packages:${PYTHONPATH} /bin/cmake --build /home/vishnu/nxp_cup_ws/build/medbot_bringup -- -j24 -l24
+[1.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_bringup': AMENT_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_perception:/home/vishnu/nxp_cup_ws/install/medbot_gazebo:/home/vishnu/nxp_cup_ws/install/medbot_behavior:/home/vishnu/nxp_cup_ws/install/medbot_navigation:/home/vishnu/nxp_cup_ws/install/medbot_msgs:/home/vishnu/nxp_cup_ws/install/medbot_localization:/home/vishnu/nxp_cup_ws/install/medbot_description:/home/vishnu/nxp_cup_ws/install/medbot_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_gazebo:/home/vishnu/nxp_cup_ws/install/medbot_msgs:/home/vishnu/nxp_cup_ws/install/medbot_localization:/home/vishnu/nxp_cup_ws/install/medbot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-12.6/lib64:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_perception:/home/vishnu/nxp_cup_ws/install/medbot_perception/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_behavior:/home/vishnu/nxp_cup_ws/install/medbot_behavior/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_navigation:/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_control:/home/vishnu/nxp_cup_ws/install/medbot_control/lib/python3.12/site-packages:${PYTHONPATH} /bin/cmake --install /home/vishnu/nxp_cup_ws/build/medbot_bringup
+[1.036s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(medbot_bringup)
+[1.037s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup' for CMake module files
+[1.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_bringup' returned '0': AMENT_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_perception:/home/vishnu/nxp_cup_ws/install/medbot_gazebo:/home/vishnu/nxp_cup_ws/install/medbot_behavior:/home/vishnu/nxp_cup_ws/install/medbot_navigation:/home/vishnu/nxp_cup_ws/install/medbot_msgs:/home/vishnu/nxp_cup_ws/install/medbot_localization:/home/vishnu/nxp_cup_ws/install/medbot_description:/home/vishnu/nxp_cup_ws/install/medbot_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vishnu/nxp_cup_ws/install/medbot_gazebo:/home/vishnu/nxp_cup_ws/install/medbot_msgs:/home/vishnu/nxp_cup_ws/install/medbot_localization:/home/vishnu/nxp_cup_ws/install/medbot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/usr/local/cuda-12.6/lib64:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_perception:/home/vishnu/nxp_cup_ws/install/medbot_perception/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_behavior:/home/vishnu/nxp_cup_ws/install/medbot_behavior/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_navigation:/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/install/medbot_msgs/lib/python3.12/site-packages:/home/vishnu/nxp_cup_ws/build/medbot_control:/home/vishnu/nxp_cup_ws/install/medbot_control/lib/python3.12/site-packages:${PYTHONPATH} /bin/cmake --install /home/vishnu/nxp_cup_ws/build/medbot_bringup
+[1.037s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup' for CMake config files
+[1.037s] Level 1:colcon.colcon_core.shell:create_environment_hook('medbot_bringup', 'cmake_prefix_path')
+[1.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/hook/cmake_prefix_path.ps1'
+[1.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/hook/cmake_prefix_path.dsv'
+[1.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/hook/cmake_prefix_path.sh'
+[1.038s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup/bin'
+[1.038s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup/lib/pkgconfig/medbot_bringup.pc'
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup/lib/python3.12/site-packages'
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup/bin'
+[1.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/package.ps1'
+[1.040s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/package.dsv'
+[1.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/package.sh'
+[1.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/package.bash'
+[1.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/package.zsh'
+[1.040s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/colcon-core/packages/medbot_bringup)
+[1.041s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(medbot_bringup)
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup' for CMake module files
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup' for CMake config files
+[1.041s] Level 1:colcon.colcon_core.shell:create_environment_hook('medbot_bringup', 'cmake_prefix_path')
+[1.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/hook/cmake_prefix_path.ps1'
+[1.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/hook/cmake_prefix_path.dsv'
+[1.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/hook/cmake_prefix_path.sh'
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup/bin'
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup/lib/pkgconfig/medbot_bringup.pc'
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup/lib/python3.12/site-packages'
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/vishnu/nxp_cup_ws/install/medbot_bringup/bin'
+[1.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/package.ps1'
+[1.043s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/package.dsv'
+[1.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/package.sh'
+[1.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/package.bash'
+[1.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/medbot_bringup/package.zsh'
+[1.044s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vishnu/nxp_cup_ws/install/medbot_bringup/share/colcon-core/packages/medbot_bringup)
+[1.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.044s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.044s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.048s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.048s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.048s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.048s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[1.048s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.048s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vishnu/nxp_cup_ws/install/local_setup.ps1'
+[1.048s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vishnu/nxp_cup_ws/install/_local_setup_util_ps1.py'
+[1.049s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vishnu/nxp_cup_ws/install/setup.ps1'
+[1.049s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vishnu/nxp_cup_ws/install/local_setup.sh'
+[1.049s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vishnu/nxp_cup_ws/install/_local_setup_util_sh.py'
+[1.049s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vishnu/nxp_cup_ws/install/setup.sh'
+[1.050s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vishnu/nxp_cup_ws/install/local_setup.bash'
+[1.050s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vishnu/nxp_cup_ws/install/setup.bash'
+[1.050s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vishnu/nxp_cup_ws/install/local_setup.zsh'
+[1.050s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vishnu/nxp_cup_ws/install/setup.zsh'

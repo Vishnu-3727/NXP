@@ -1,0 +1,21 @@
+[0.128s] Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --build /home/vishnu/nxp_cup_ws/build/medbot_navigation -- -j24 -l24
+[0.169s] Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --build /home/vishnu/nxp_cup_ws/build/medbot_navigation -- -j24 -l24
+[0.170s] Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --install /home/vishnu/nxp_cup_ws/build/medbot_navigation
+[0.177s] -- Install configuration: ""
+[0.177s] -- Execute custom install script
+[0.177s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/ament_index/resource_index/package_run_dependencies/medbot_navigation
+[0.177s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/ament_index/resource_index/parent_prefix_path/medbot_navigation
+[0.177s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/environment/ament_prefix_path.sh
+[0.177s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/environment/ament_prefix_path.dsv
+[0.177s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/environment/path.sh
+[0.177s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/environment/path.dsv
+[0.178s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/local_setup.bash
+[0.178s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/local_setup.sh
+[0.178s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/local_setup.zsh
+[0.178s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/local_setup.dsv
+[0.178s] -- Symlinking: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/package.dsv
+[0.203s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/ament_index/resource_index/packages/medbot_navigation
+[0.203s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/cmake/medbot_navigationConfig.cmake
+[0.203s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/cmake/medbot_navigationConfig-version.cmake
+[0.204s] -- Up-to-date symlink: /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/package.xml
+[0.204s] Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /bin/cmake --install /home/vishnu/nxp_cup_ws/build/medbot_navigation

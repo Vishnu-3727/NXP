@@ -1,0 +1,56 @@
+# ros2_control controller manager + diff drive for the 4-wheel base.
+# Loaded by the gz_ros2_control plugin (see ros2_control.xacro).
+controller_manager:
+  ros__parameters:
+    update_rate: 50
+    use_sim_time: true
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+
+diff_drive_controller:
+  ros__parameters:
+    use_sim_time: true
+    left_wheel_names:  ["front_left_wheel_joint", "rear_left_wheel_joint"]
+    right_wheel_names: ["front_right_wheel_joint", "rear_right_wheel_joint"]
+
+    wheel_separation: 0.248
+    wheel_radius: 0.048
+
+    # 4-wheel SKID-STEER correction. This is a rigid 4-wheel base, not an ideal
+    # 2-wheel diff drive: front/rear tyres SCRUB during rotation, so the effective
+    # turning track is ~2x the geometric 0.248m. Without this the controller commands
+    # wheel speeds from the raw geometric separation and the robot UNDER-ROTATES on
+    # every turn (~half the commanded yaw) -> drifts wide at corners onto the grass.
+    # The EKF/IMU fusion only corrects what odom *reports*; it does NOT make the
+    # plant turn as commanded. Multiplier scales the separation used for BOTH the
+    # twist->wheel command and odometry. 2.0 = community default for 4-wheel skid;
+    # calibrated empirically vs gazebo ground-truth yaw rate (see plan Phase A).
+    wheel_separation_multiplier: 2.0
+
+    # Multiple wheels per side share one velocity command.
+    wheels_per_side: 2
+
+    publish_rate: 50.0
+    odom_frame_id: odom
+    base_frame_id: base_footprint
+
+    # EKF (medbot_localization/config/ekf.yaml) owns odom->base_footprint --
+    # fuses wheel odom + IMU yaw, which matters: this 4-wheel rigid-axle drive
+    # slips during turns and plain wheel odom silently drifts (confirmed via
+    # both corrupted SLAM maps and MPPI wandering off the road on odom alone).
+    # Always run ekf.launch.py alongside anything that consumes odom/TF.
+    enable_odom_tf: false
+    open_loop: false
+
+    # ponytail: ros-jazzy-diff-drive-controller 4.40.1 dropped use_stamped_vel —
+    # cmd_vel is unconditionally geometry_msgs/msg/TwistStamped now. Any node
+    # publishing cmd_vel (teleop, behavior) must use TwistStamped, not Twist.
+
+    linear.x.max_velocity: 1.5
+    linear.x.min_velocity: -1.5
+    angular.z.max_velocity: 3.0
+    angular.z.min_velocity: -3.0

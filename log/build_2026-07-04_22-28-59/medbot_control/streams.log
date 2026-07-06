@@ -1,0 +1,19 @@
+[0.827s] Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishnu/nxp_cup_ws/install/medbot_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vishnu/nxp_cup_ws/build/medbot_control/build --no-deps symlink_data
+[1.059s] running develop
+[1.164s] running egg_info
+[1.177s] writing medbot_control.egg-info/PKG-INFO
+[1.177s] writing dependency_links to medbot_control.egg-info/dependency_links.txt
+[1.177s] writing entry points to medbot_control.egg-info/entry_points.txt
+[1.177s] writing requirements to medbot_control.egg-info/requires.txt
+[1.177s] writing top-level names to medbot_control.egg-info/top_level.txt
+[1.199s] reading manifest file 'medbot_control.egg-info/SOURCES.txt'
+[1.200s] writing manifest file 'medbot_control.egg-info/SOURCES.txt'
+[1.212s] running build_ext
+[1.212s] Creating /home/vishnu/nxp_cup_ws/install/medbot_control/lib/python3.12/site-packages/medbot-control.egg-link (link to .)
+[1.212s] Installing patrol_demo script to /home/vishnu/nxp_cup_ws/install/medbot_control/lib/medbot_control
+[1.212s] 
+[1.212s] Installed /home/vishnu/nxp_cup_ws/build/medbot_control
+[1.212s] running symlink_data
+[1.212s] symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_control/launch/collision_monitor.launch.py -> /home/vishnu/nxp_cup_ws/install/medbot_control/share/medbot_control/launch
+[1.213s] symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_control/config/collision_monitor.yaml -> /home/vishnu/nxp_cup_ws/install/medbot_control/share/medbot_control/config
+[1.246s] Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishnu/nxp_cup_ws/install/medbot_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vishnu/nxp_cup_ws/build/medbot_control/build --no-deps symlink_data

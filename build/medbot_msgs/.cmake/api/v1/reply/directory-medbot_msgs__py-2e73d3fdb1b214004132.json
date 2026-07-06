@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "medbot_msgs__py",
+		"source" : "/home/vishnu/nxp_cup_ws/build/medbot_msgs/medbot_msgs__py"
+	}
+}

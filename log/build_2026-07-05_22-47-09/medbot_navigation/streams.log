@@ -1,0 +1,22 @@
+[0.537s] Invoking command in '/home/vishnu/nxp_cup_ws/build/medbot_navigation': PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vishnu/nxp_cup_ws/build/medbot_navigation/build --no-deps symlink_data --force
+[0.696s] running develop
+[0.774s] running egg_info
+[0.783s] writing medbot_navigation.egg-info/PKG-INFO
+[0.783s] writing dependency_links to medbot_navigation.egg-info/dependency_links.txt
+[0.783s] writing entry points to medbot_navigation.egg-info/entry_points.txt
+[0.783s] writing requirements to medbot_navigation.egg-info/requires.txt
+[0.783s] writing top-level names to medbot_navigation.egg-info/top_level.txt
+[0.798s] reading manifest file 'medbot_navigation.egg-info/SOURCES.txt'
+[0.799s] writing manifest file 'medbot_navigation.egg-info/SOURCES.txt'
+[0.807s] running build_ext
+[0.807s] Creating /home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages/medbot-navigation.egg-link (link to .)
+[0.807s] Installing goto_goal script to /home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/medbot_navigation
+[0.807s] Installing wander_route script to /home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/medbot_navigation
+[0.807s] 
+[0.808s] Installed /home/vishnu/nxp_cup_ws/build/medbot_navigation
+[0.808s] running symlink_data
+[0.808s] symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_navigation/resource/medbot_navigation -> /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/ament_index/resource_index/packages
+[0.808s] symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_navigation/package.xml -> /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation
+[0.808s] symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_navigation/launch/local_nav.launch.py -> /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/launch
+[0.808s] symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_navigation/config/nav2_params.yaml -> /home/vishnu/nxp_cup_ws/install/medbot_navigation/share/medbot_navigation/config
+[0.829s] Invoked command in '/home/vishnu/nxp_cup_ws/build/medbot_navigation' returned '0': PYTHONPATH=/home/vishnu/nxp_cup_ws/build/medbot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishnu/nxp_cup_ws/install/medbot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vishnu/nxp_cup_ws/build/medbot_navigation/build --no-deps symlink_data --force

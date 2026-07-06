@@ -1,0 +1,21 @@
+running develop
+running egg_info
+creating medbot_behavior.egg-info
+writing medbot_behavior.egg-info/PKG-INFO
+writing dependency_links to medbot_behavior.egg-info/dependency_links.txt
+writing requirements to medbot_behavior.egg-info/requires.txt
+writing top-level names to medbot_behavior.egg-info/top_level.txt
+writing manifest file 'medbot_behavior.egg-info/SOURCES.txt'
+reading manifest file 'medbot_behavior.egg-info/SOURCES.txt'
+writing manifest file 'medbot_behavior.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/vishnu/nxp_cup_ws/install/medbot_behavior/lib/python3.12/site-packages/medbot-behavior.egg-link (link to .)
+
+Installed /home/vishnu/nxp_cup_ws/build/medbot_behavior
+running symlink_data
+creating /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/ament_index
+creating /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/ament_index/resource_index
+creating /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/ament_index/resource_index/packages
+symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_behavior/resource/medbot_behavior -> /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/ament_index/resource_index/packages
+symbolically linking /home/vishnu/nxp_cup_ws/build/medbot_behavior/package.xml -> /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/medbot_behavior
+creating /home/vishnu/nxp_cup_ws/install/medbot_behavior/share/medbot_behavior/launch
