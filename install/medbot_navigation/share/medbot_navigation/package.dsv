@@ -1,9 +1,0 @@
-source;share/medbot_navigation/hook/pythonpath.ps1
-source;share/medbot_navigation/hook/pythonpath.dsv
-source;share/medbot_navigation/hook/pythonpath.sh
-source;share/medbot_navigation/hook/ament_prefix_path.ps1
-source;share/medbot_navigation/hook/ament_prefix_path.dsv
-source;share/medbot_navigation/hook/ament_prefix_path.sh
-source;../../build/medbot_navigation/share/medbot_navigation/hook/pythonpath_develop.ps1
-source;../../build/medbot_navigation/share/medbot_navigation/hook/pythonpath_develop.dsv
-source;../../build/medbot_navigation/share/medbot_navigation/hook/pythonpath_develop.sh

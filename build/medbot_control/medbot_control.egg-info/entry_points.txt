@@ -1,2 +1,0 @@
-[console_scripts]
-patrol_demo = medbot_control.patrol_demo:main

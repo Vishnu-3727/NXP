@@ -1,9 +1,0 @@
-/home/vishnu/nxp_cup_ws/build/medbot_gazebo/CMakeFiles/uninstall.dir
-/home/vishnu/nxp_cup_ws/build/medbot_gazebo/CMakeFiles/medbot_gazebo_uninstall.dir
-/home/vishnu/nxp_cup_ws/build/medbot_gazebo/CMakeFiles/test.dir
-/home/vishnu/nxp_cup_ws/build/medbot_gazebo/CMakeFiles/edit_cache.dir
-/home/vishnu/nxp_cup_ws/build/medbot_gazebo/CMakeFiles/rebuild_cache.dir
-/home/vishnu/nxp_cup_ws/build/medbot_gazebo/CMakeFiles/list_install_components.dir
-/home/vishnu/nxp_cup_ws/build/medbot_gazebo/CMakeFiles/install.dir
-/home/vishnu/nxp_cup_ws/build/medbot_gazebo/CMakeFiles/install/local.dir
-/home/vishnu/nxp_cup_ws/build/medbot_gazebo/CMakeFiles/install/strip.dir

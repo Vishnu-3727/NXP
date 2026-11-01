@@ -1,3 +1,0 @@
-[console_scripts]
-goto_goal = medbot_navigation.goto_goal:main
-wander_route = medbot_navigation.wander_route:main

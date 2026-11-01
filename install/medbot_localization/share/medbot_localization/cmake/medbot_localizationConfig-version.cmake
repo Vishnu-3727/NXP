@@ -1,1 +1,0 @@
-/home/vishnu/nxp_cup_ws/build/medbot_localization/ament_cmake_core/medbot_localizationConfig-version.cmake

@@ -1,9 +1,0 @@
-/home/vishnu/nxp_cup_ws/build/medbot_description/CMakeFiles/uninstall.dir
-/home/vishnu/nxp_cup_ws/build/medbot_description/CMakeFiles/medbot_description_uninstall.dir
-/home/vishnu/nxp_cup_ws/build/medbot_description/CMakeFiles/test.dir
-/home/vishnu/nxp_cup_ws/build/medbot_description/CMakeFiles/edit_cache.dir
-/home/vishnu/nxp_cup_ws/build/medbot_description/CMakeFiles/rebuild_cache.dir
-/home/vishnu/nxp_cup_ws/build/medbot_description/CMakeFiles/list_install_components.dir
-/home/vishnu/nxp_cup_ws/build/medbot_description/CMakeFiles/install.dir
-/home/vishnu/nxp_cup_ws/build/medbot_description/CMakeFiles/install/local.dir
-/home/vishnu/nxp_cup_ws/build/medbot_description/CMakeFiles/install/strip.dir

@@ -1,4 +1,0 @@
-source;share/medbot_localization/local_setup.bash
-source;share/medbot_localization/local_setup.dsv
-source;share/medbot_localization/local_setup.sh
-source;share/medbot_localization/local_setup.zsh

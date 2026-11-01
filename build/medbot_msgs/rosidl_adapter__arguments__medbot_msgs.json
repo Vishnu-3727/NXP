@@ -1,8 +1,0 @@
-{
-  "package_name": "medbot_msgs",
-  "non_idl_tuples": [
-    "/home/vishnu/nxp_cup_ws/src/medbot_msgs:msg/Detection.msg",
-    "/home/vishnu/nxp_cup_ws/src/medbot_msgs:msg/Patient.msg",
-    "/home/vishnu/nxp_cup_ws/src/medbot_msgs:msg/MissionState.msg"
-  ]
-}

@@ -1,1 +1,0 @@
-/home/vishnu/nxp_cup_ws/build/medbot_bringup/ament_cmake_core/medbot_bringupConfig-version.cmake
